@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Pruned Moon - One Man Band - Austin, TX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background: #000 url('./pruned_moon_spotify_header8_small.jpg') no-repeat center center fixed;
@@ -21,6 +22,7 @@
             margin: 10px;
             border: 1px solid white;
             border-radius: 5px;
+            line-height: 55px;
         }
 
         a:hover {
@@ -35,6 +37,28 @@
             width: 80%;
             padding: 20px;
             background: rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        .bottom-align {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            max-height: 200px;
+            width: 400px;
+        }
+        @media (max-width: 768px) {
+            body {
+                background-position: calc(50% + 20px) center;
+                padding-bottom: 50px;
+            }
+
+            .bottom-align {
+                position: static;
+                width: calc(100vw - 16px);
+                max-height: none;
+                transform: none;
+            }
         }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -49,11 +73,17 @@
     <div class="container">
         <h1>Hello I am Pruned Moon from Austin TX</h1>
         <h2>Solo artist with much patience (but not enough to wait till I'm dead)</h2>
-        <a href="https://open.spotify.com/track/6FZdYwrH9tCw2p5gZ8dKqg?si=HYDS6Yi7RKebDl7S92tktw">Spotify</a>
+        <a href="https://open.spotify.com/artist/0pxXNsIHWBiuYo9ceFDCxU?si=j1F2RqEjTD2-o5Smzs31Mw">Spotify</a>
         <a href="https://youtu.be/dScq1G84FUQ?si=TtvKV9-3TCgCb9_f">YouTube</a>
         <a href="https://www.instagram.com/prunedmoon/">Instagram</a>
         <a href="https://www.twitter.com/prunedmoon/">X</a>
         <p>Much Love, Dan Mooney AKA Pruned Moon</p>
+    </div>
+    <div style="height: 30vh"></div>
+    <div>
+        <div class="bottom-align">
+            <iframe style="margin-bottom: 50px;border-radius:12px" src="https://open.spotify.com/embed/track/4UaL9RboZwzJfAi5IO8IEe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
     </div>
 </body>
 </html>
